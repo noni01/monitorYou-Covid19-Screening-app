@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "175749358092",
+    "project_id": "monitoryou",
+    "storage_bucket": "monitoryou.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175749358092:android:e6ad807a556a1c94d18429",
+        "android_client_info": {
+          "package_name": "com.example.monitoryou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175749358092-rko818kde9j4bo0l81fsl6ur6uv9mas5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCogVDiZhuaDRMoEB9Pne5AfcFmJRVCy1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175749358092-rko818kde9j4bo0l81fsl6ur6uv9mas5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

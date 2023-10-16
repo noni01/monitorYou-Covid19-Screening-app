@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/teal_700"
+        android:id="@+id/tv1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/tv1"
+        android:id="@+id/tv2"
+        android:hint="office id"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_android"
+        android:id="@+id/profile"
+        android:layout_marginTop="80dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/profile"
+        app:cardBackgroundColor="@color/green"
+        android:layout_marginTop="50dp"
+        android:id="@+id/card1"
+        android:layout_marginLeft="2dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_plus"
+                android:id="@+id/selfassess"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self Assess"
+                android:layout_below="@id/selfassess"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/profile"
+        app:cardBackgroundColor="@color/teal_700"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/card1"
+        android:id="@+id/card2"
+        android:layout_marginLeft="8dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_health"
+                android:id="@+id/health"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health Checkup"
+                android:layout_below="@id/health"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate workpass"
+        android:textSize="20sp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/card2"
+        android:layout_marginTop="100dp"/>
+
+</RelativeLayout>
